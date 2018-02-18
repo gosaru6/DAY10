@@ -16,16 +16,33 @@ ActiveRecord::Schema.define(version: 20180218052402) do
   enable_extension "plpgsql"
 
   create_table "blogs", force: :cascade do |t|
+<<<<<<< HEAD
+=======
+    t.string "title"
+    t.text "content"
+    t.integer "user_id"
+>>>>>>> 5cbf9bac330782896dd3301450ed176e4e64e229
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "favorites", force: :cascade do |t|
+<<<<<<< HEAD
+=======
+    t.integer "user_id"
+    t.integer "blog_id"
+>>>>>>> 5cbf9bac330782896dd3301450ed176e4e64e229
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
+<<<<<<< HEAD
+=======
+    t.string "user_name"
+    t.string "email"
+    t.text "introduction"
+>>>>>>> 5cbf9bac330782896dd3301450ed176e4e64e229
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
